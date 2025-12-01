@@ -1,0 +1,493 @@
+<table border=“1” cellpadding=“8” cellspacing=“0” style=“border-collapse: collapse; width: 100%; font-family: Arial; direction: rtl; text-align: right;”>
+
+<thead style=“background-color: #4CAF50; color: white;”>
+
+<tr>
+
+<th>نوع</th>
+
+<th>ID/نام</th>
+
+<th>عنوان</th>
+
+<th>وضعیت</th>
+
+<th>Trigger/Schedule</th>
+
+<th>Synchronous</th>
+
+<th>پروژه‌های هدف</th>
+
+<th>شرایط (Conditions)</th>
+
+<th>اسکریپت</th>
+
+<th>توضیحات</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<!-- ==================== AUTOMATION RULES ==================== -->
+
+<!-- Rule 98 -->
+
+<tr>
+
+<td><strong>Rule</strong></td>
+
+<td><strong>98</strong></td>
+
+<td>116 --Send Email To Mr.ArzPeyma For Done Portfolio</td>
+
+<td style=“background-color: #d4edda; color: #155724;”><strong>✅ ENABLED</strong></td>
+
+<td>Status Transition</td>
+
+<td style=“background-color: #fff3cd;”><strong>✔️ Yes</strong></td>
+
+<td>
+
+• <strong>Systems and Software</strong> (10900)<br>
+
+• <strong>نرم افزار</strong> (10403)
+
+</td>
+
+<td>
+
+• <strong>Issue Type:</strong> Portfolio Epic (10008)<br>
+
+• <strong>From Status:</strong> In Review, To Do, In Progress, Canceled<br>
+
+• <strong>To Status:</strong> Done
+
+</td>
+
+<td><code>116 --Send Email To SAP-Soft Manager For Done portfolio Epics.groovy</code></td>
+
+<td>ارسال ایمیل به آقای ارزپیما هنگام تکمیل Portfolio Epic</td>
+
+</tr>
+
+<!-- Rule 114 -->
+
+<tr>
+
+<td><strong>Rule</strong></td>
+
+<td><strong>114</strong></td>
+
+<td>Email To-project and Subproject change managers</td>
+
+<td style=“background-color: #d4edda; color: #155724;”><strong>✅ ENABLED</strong></td>
+
+<td>Issue Created</td>
+
+<td style=“background-color: #f8d7da;”><strong>✘ No</strong></td>
+
+<td>
+
+• <strong>PT_Engineering</strong> (12404)<br>
+
+• <strong>Technical Unit</strong> (12900)<br>
+
+• <strong>Supply Monitor Project</strong> (13102)
+
+</td>
+
+<td>
+
+• <strong>Issue Type:</strong> SubProject, MainProject
+
+</td>
+
+<td><code>126 – send Email To Change manager in Project and Subproject-NMM.groovy</code></td>
+
+<td>ارسال ایمیل به مدیران تغییر پروژه و زیرپروژه هنگام ایجاد</td>
+
+</tr>
+
+<!-- Rule 116 -->
+
+<tr>
+
+<td><strong>Rule</strong></td>
+
+<td><strong>116</strong></td>
+
+<td>130 --Send Email To TU and PTN Managers For Done Portfolio</td>
+
+<td style=“background-color: #d4edda; color: #155724;”><strong>✅ ENABLED</strong></td>
+
+<td>Status Transition</td>
+
+<td style=“background-color: #f8d7da;”><strong>✘ No</strong></td>
+
+<td>
+
+<strong>Global</strong> (استثناء: PT_Engineering، Technical Unit، SMP، Atlassian Products، Task Location & Timeline، Polymer Service، Method Engineering)
+
+</td>
+
+<td>
+
+• <strong>Issue Type:</strong> Portfolio Epic<br>
+
+• <strong>From Status:</strong> In Review, To Do, In Progress, Canceled<br>
+
+• <strong>To Status:</strong> Done
+
+</td>
+
+<td><code>130 --NMM_ Email To mnagers Done Main Project.groovy</code></td>
+
+<td>ارسال ایمیل به مدیران TU و PTN هنگام تکمیل Portfolio Epic</td>
+
+</tr>
+
+<!-- Rule 124 -->
+
+<tr>
+
+<td><strong>Rule</strong></td>
+
+<td><strong>124</strong></td>
+
+<td>Email Create Task and Support to Assignee and change managers</td>
+
+<td style=“background-color: #d4edda; color: #155724;”><strong>✅ ENABLED</strong></td>
+
+<td>Issue Created</td>
+
+<td style=“background-color: #fff3cd;”><strong>✔️ Yes</strong></td>
+
+<td>
+
+• <strong>PT_Engineering</strong> (12404)<br>
+
+• <strong>Technical Unit</strong> (12900)<br>
+
+• <strong>Supply Monitor Project</strong> (13102)
+
+</td>
+
+<td>
+
+• <strong>Issue Type:</strong> Task, Support
+
+</td>
+
+<td><code>132 – Send email to assignee For Task And Support Type-NMM.groovy</code></td>
+
+<td>ارسال ایمیل به Assignee و مدیران تغییر هنگام ایجاد Task یا Support</td>
+
+</tr>
+
+<!-- Rule 125 -->
+
+<tr>
+
+<td><strong>Rule</strong></td>
+
+<td><strong>125</strong></td>
+
+<td>123 --Send Email To TU and PTN Managers For Done Portfolio</td>
+
+<td style=“background-color: #d4edda; color: #155724;”><strong>✅ ENABLED</strong></td>
+
+<td>Status Transition</td>
+
+<td style=“background-color: #f8d7da;”><strong>✘ No</strong></td>
+
+<td>
+
+• <strong>PT_Engineering</strong> (12404)<br>
+
+• <strong>Technical Unit</strong> (12900)
+
+</td>
+
+<td>
+
+• <strong>Issue Type:</strong> MainProject (11200)<br>
+
+• <strong>From Status:</strong> Multiple<br>
+
+• <strong>To Status:</strong> Done
+
+</td>
+
+<td><code>130 --NMM_ Email To mnagers Done Main Project.groovy</code></td>
+
+<td>ارسال ایمیل به مدیران TU و PTN هنگام تکمیل پروژه اصلی</td>
+
+</tr>
+
+<!-- Rule 138 -->
+
+<tr>
+
+<td><strong>Rule</strong></td>
+
+<td><strong>138</strong></td>
+
+<td>122 – Update status to Waiting For Approval If status in SMP= in Progress Or to do</td>
+
+<td style=“background-color: #d4edda; color: #155724;”><strong>✅ ENABLED</strong></td>
+
+<td>Field Value Changed</td>
+
+<td style=“background-color: #f8d7da;”><strong>✘ No</strong></td>
+
+<td>
+
+• <strong>Supply Monitor Project</strong> (13102)
+
+</td>
+
+<td>
+
+• <strong>Field Changed:</strong> Parent<br>
+
+• <strong>Current Status:</strong> To Do, Canceled, In Progress
+
+</td>
+
+<td><code>122 – Update status to Waiting For Approval If status in SMP= in Progress Or to do.groovy</code></td>
+
+<td>تغییر وضعیت به Waiting for Approval هنگام تغییر Parent در پروژه SMP</td>
+
+</tr>
+
+<!-- Rule 166 -->
+
+<tr>
+
+<td><strong>Rule</strong></td>
+
+<td><strong>166</strong></td>
+
+<td>130 --Send Email To TU and PTN Managers For Done Portfolio</td>
+
+<td style=“background-color: #d4edda; color: #155724;”><strong>✅ ENABLED</strong></td>
+
+<td>Status Transition</td>
+
+<td style=“background-color: #f8d7da;”><strong>✘ No</strong></td>
+
+<td>
+
+• <strong>Task Location & Timeline</strong> (13103)<br>
+
+• <strong>Assembly Process Engineering</strong> (12701)<br>
+
+(استثناء: Quality Service، Technical Unit، Task Location & Timeline، Polymer Service)
+
+</td>
+
+<td>
+
+• <strong>Issue Type:</strong> Portfolio Epic<br>
+
+• <strong>From Status:</strong> In Review, To Do, In Progress, Canceled<br>
+
+• <strong>To Status:</strong> Done
+
+</td>
+
+<td><code>130 --NMM_ Email To mnagers Done Main Project.groovy</code></td>
+
+<td>ارسال ایمیل به مدیران TU و PTN هنگام تکمیل Portfolio Epic</td>
+
+</tr>
+
+<!-- Rule 167 (DISABLED) -->
+
+<tr style=“opacity: 0.6;”>
+
+<td><strong>Rule</strong></td>
+
+<td><strong>167</strong></td>
+
+<td>send Certificate Email To esfandani Insert CertificatesToActive</td>
+
+<td style=“background-color: #f8d7da; color: #721c24;”><strong>❌ DISABLED</strong></td>
+
+<td>Status Transition</td>
+
+<td style=“background-color: #fff3cd;”><strong>✔️ Yes</strong></td>
+
+<td>
+
+• <strong>IT Change Management</strong> (12702)
+
+</td>
+
+<td>
+
+• <strong>From Status:</strong> Insert Certificates<br>
+
+• <strong>To Status:</strong> Active
+
+</td>
+
+<td><code>146 – send Certificate Email To esfandani-ToActive.groovy</code></td>
+
+<td>ارسال ایمیل گواهی به اصفهانی هنگام فعال‌سازی</td>
+
+</tr>
+
+<!-- Rule 168 (DISABLED) -->
+
+<tr style=“opacity: 0.6;”>
+
+<td><strong>Rule</strong></td>
+
+<td><strong>168</strong></td>
+
+<td>148 – send Certificate Email To esfandani InsertCertificatesToInform</td>
+
+<td style=“background-color: #f8d7da; color: #721c24;”><strong>❌ DISABLED</strong></td>
+
+<td>Status Transition</td>
+
+<td style=“background-color: #fff3cd;”><strong>✔️ Yes</strong></td>
+
+<td>
+
+• <strong>IT Change Management</strong> (12702)
+
+</td>
+
+<td>
+
+• <strong>From Status:</strong> Insert Certificates<br>
+
+• <strong>To Status:</strong> Inform
+
+</td>
+
+<td><code>148 – send Certificate Email To esfandani-ToInform.groovy</code></td>
+
+<td>ارسال ایمیل گواهی به اصفهانی جهت اطلاع‌رسانی</td>
+
+</tr>
+
+<!-- Rule 169 (DISABLED) -->
+
+<tr style=“opacity: 0.6;”>
+
+<td><strong>Rule</strong></td>
+
+<td><strong>169</strong></td>
+
+<td>send Certificate Email To mirzayi-ActiveToPendding</td>
+
+<td style=“background-color: #f8d7da; color: #721c24;”><strong>❌ DISABLED</strong></td>
+
+<td>Status Transition</td>
+
+<td style=“background-color: #fff3cd;”><strong>✔️ Yes</strong></td>
+
+<td>
+
+• <strong>IT Change Management</strong> (12702)
+
+</td>
+
+<td>
+
+• <strong>From Status:</strong> Active<br>
+
+• <strong>To Status:</strong> Pending
+
+</td>
+
+<td><code>147 --send Certificate Email To mirzayi-activetopendding.groovy</code></td>
+
+<td>ارسال ایمیل گواهی به میرزایی هنگام تغییر به Pending</td>
+
+</tr>
+
+<!-- ==================== SCHEDULED JOBS ==================== -->
+
+<tr style=“background-color: #e8f5e9;”>
+
+<td colspan=“10” style=“text-align: center; font-size: 16px; font-weight: bold;”>
+
+📅 SCHEDULED JOBS (جاب‌های زمان‌بندی‌شده)
+
+</td>
+
+</tr>
+
+<!-- Job 1 -->
+
+<tr>
+
+<td><strong>Job</strong></td>
+
+<td><strong>Job-123</strong></td>
+
+<td>123 – send email for none Done Tasks- TU.groovy</td>
+
+<td style=“background-color: #d4edda; color: #155724;”><strong>✅ ACTIVE</strong></td>
+
+<td>
+
+<strong>Cron:</strong> <code>0 0 7 ? * 1-4</code><br>
+
+<strong>زمان اجرا:</strong> ساعت 7 صبح، یکشنبه تا چهارشنبه
+
+</td>
+
+<td style=“background-color: #e0e0e0;”>N/A</td>
+
+<td><strong>Global</strong> (بدون محدودیت پروژه)</td>
+
+<td>—</td>
+
+<td><code>ScriptRunner for Jira-Jobs/123 – send email for none Done Tasks- TU.groovy</code></td>
+
+<td>ارسال ایمیل برای تسک‌های تکمیل‌نشده به صورت روزانه (کاربر: نیلا منصور)</td>
+
+</tr>
+
+<!-- Job 2 -->
+
+<tr>
+
+<td><strong>Job</strong></td>
+
+<td><strong>Job-126</strong></td>
+
+<td>126 – send email for Approve none Done Tasks-PT& TU</td>
+
+<td style=“background-color: #d4edda; color: #155724;”><strong>✅ ACTIVE</strong></td>
+
+<td>
+
+<strong>Cron:</strong> <code>0 0 22 ? * SAT,TUE</code><br>
+
+<strong>زمان اجرا:</strong> ساعت 10 شب، فقط شنبه و سه‌شنبه
+
+</td>
+
+<td style=“background-color: #e0e0e0;”>N/A</td>
+
+<td><strong>Global</strong> (بدون محدودیت پروژه)</td>
+
+<td>—</td>
+
+<td><code>ScriptRunner for Jira-Jobs/126 – send email for Approve none Done Tasks-PT and TU.groovy</code></td>
+
+<td>ارسال ایمیل برای تسک‌های Approve نشده به صورت هفتگی (کاربر: Jira Job)</td>
+
+</tr>
+
+</tbody>
+
+</table>
